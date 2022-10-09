@@ -13,3 +13,26 @@ header{
 header img{
     padding: 28px 0 29px 0;
 }
+
+/* Banner principal */
+
+.img-desktop{
+    width: 100%;
+}
+
+.img-mobile{
+    display: none;
+}
+
+/* Banner pincipal no mobile */
+
+@media screen and (max-width:1024px) {
+    .img-desktop{
+        display: none;
+    }
+
+    .img-mobile{
+        display: unset;
+        width: 100%;
+    }
+}
