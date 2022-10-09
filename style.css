@@ -14,6 +14,10 @@ header img{
     padding: 28px 0 29px 0;
 }
 
+body{
+    font-family: 'Inter', sans-serif;
+}
+
 /* Banner principal */
 
 .img-desktop{
@@ -22,11 +26,41 @@ header img{
 
 .img-mobile{
     display: none;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+/* info section */
+
+.info-section{
+    padding: 84px 16% 0 16%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 124px;
+}
+
+.info-section-text h1{
+    font-weight: 500;
+    font-size: 48px;
+    padding-bottom: 16px;
+}
+
+.info-section-text h2{
+    font-weight: 400;
+    font-size: 32px;
+} 
+
+.info-section-text p{
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 766px;
 }
 
 /* Banner pincipal no mobile */
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:768px) {
     .img-desktop{
         display: none;
     }
@@ -35,4 +69,20 @@ header img{
         display: unset;
         width: 100%;
     }
+
+/* .info section mobile */
+
+    .info-section{
+        flex-direction: column;
+        gap: 67px;
+    }
+
+    .info-section-text h1{
+        font-size: 28px;
+    }
+
+    .info-section-text h2{
+        font-size: 20px;
+    }
 }
+
