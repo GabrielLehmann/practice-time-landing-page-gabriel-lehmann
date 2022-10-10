@@ -33,7 +33,7 @@ body{
 /* info section */
 
 .info-section{
-    padding: 84px 16% 0 16%;
+    padding: 86px 16%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -58,6 +58,38 @@ body{
     max-width: 766px;
 }
 
+.info-section img{
+    max-width: 90%;
+}
+
+/* top cards */
+
+.top-cards{
+    background-color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 74px 0;
+    gap: 20px;
+}
+
+.top-cards-box{
+    background-color: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.23);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: min(350px,90vw);
+    min-height: 288px;
+    padding: 26px;
+    gap: 30px;
+}
+
+.top-cards-box p{
+    text-align: center;
+}
+
 /* Banner pincipal no mobile */
 
 @media screen and (max-width:768px) {
@@ -70,7 +102,7 @@ body{
         width: 100%;
     }
 
-/* .info section mobile */
+/* info section mobile */
 
     .info-section{
         flex-direction: column;
@@ -84,5 +116,10 @@ body{
     .info-section-text h2{
         font-size: 20px;
     }
-}
 
+    /* top card mobile  */
+
+    .top-cards{
+        flex-direction: column;
+    }
+}
